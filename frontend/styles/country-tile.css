@@ -1,0 +1,17 @@
+.country-tile {
+    display: inline-block;
+    width: 400px;
+    cursor: pointer;
+}
+
+.country-tile > .country-tile-flag {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+.country-tile > .country-tile-info-content {
+    display: block;
+    padding: 2rem;
+}

@@ -1,0 +1,6 @@
+.top-bar-logo {
+    display: inline-block;
+    width: 210px;
+    height: 32px;
+    background: url(https://static.broadcom.com/static/img/broadcom-logo.png) center center no-repeat;
+}
