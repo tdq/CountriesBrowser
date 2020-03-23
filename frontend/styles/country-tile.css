@@ -2,6 +2,8 @@
     display: inline-block;
     width: 400px;
     cursor: pointer;
+    background-color: var(--panel-background-color);
+    color: var(--text-color);
 }
 
 .country-tile > .country-tile-flag {

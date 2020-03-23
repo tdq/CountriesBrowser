@@ -29,6 +29,8 @@ public class CountryView extends Div implements HasUrlParameter<String> {
     @Autowired
     public CountryView(@Qualifier("countriesService") CountriesService countriesService) {
         this.countriesService = countriesService;
+
+        setClassName("country-view");
     }
 
     @Override

@@ -1,0 +1,15 @@
+.main-layout {
+    --background-color: #202D36;
+    --panel-background-color: #2B3743;
+    --text-color: #E8EFEF;
+
+    background-color: var(--background-color);
+    transition: all 0.5s ease 0s;
+    height: 100%;
+}
+
+.main-layout[mode=LIGHT] {
+    --background-color: #FAFAFA;
+    --panel-background-color: #FFFFFF;
+    --text-color: #18181A;
+}

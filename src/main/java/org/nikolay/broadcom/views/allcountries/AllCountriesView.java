@@ -3,6 +3,7 @@ package org.nikolay.broadcom.views.allcountries;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.router.RouteAlias;
 import org.apache.commons.lang3.StringUtils;
 import org.nikolay.broadcom.model.Country;
 import org.nikolay.broadcom.services.CountriesService;
@@ -15,7 +16,8 @@ import java.io.IOException;
 import java.util.List;
 
 @CssImport("./styles/all-countries-view.css")
-@Route(layout = MainLayout.class)
+@Route(value = "countries", layout = MainLayout.class)
+@RouteAlias(value = "", layout = MainLayout.class)
 public class AllCountriesView extends Div {
 
     private final transient Div countriesContainer = new Div();
@@ -25,6 +27,7 @@ public class AllCountriesView extends Div {
             @Qualifier("countriesService") CountriesService countriesService,
             FilterBar filterBar) {
 
+        setClassName("all-countries-view");
         countriesContainer.setClassName("countries-container");
 
 
