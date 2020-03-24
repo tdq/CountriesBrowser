@@ -35,8 +35,12 @@ class FilterBar extends Div {
         searchField.setClearButtonVisible(true);
         searchField.setPlaceholder("Search for a country...");
         searchField.addValueChangeListener(e -> {
-            if(filterByNameListener != null) {
-                filterByNameListener.onFilter(e.getValue());
+            if(e.isFromClient()) {
+                if (filterByNameListener != null) {
+                    filterByNameListener.onFilter(e.getValue());
+                }
+
+                regions.clear();
             }
         });
 
@@ -45,8 +49,12 @@ class FilterBar extends Div {
         regions.setPlaceholder("Filter by Region");
         regions.setItems(countriesService.getRegions());
         regions.addValueChangeListener(e -> {
-            if(filterByRegionListener != null) {
-                filterByRegionListener.onFilter(e.getValue());
+            if(e.isFromClient()) {
+                if (filterByRegionListener != null) {
+                    filterByRegionListener.onFilter(e.getValue());
+                }
+
+                searchField.clear();
             }
         });
 

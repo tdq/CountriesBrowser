@@ -11,7 +11,7 @@ import java.util.function.Supplier;
  */
 class Cache<TYPE> {
 
-    private static final int DEFAULT_CACHE_LIVE_TIME_SECONDS = 60;
+    private static final int DEFAULT_CACHE_LIVE_TIME_SECONDS = 3600;
 
     // TODO can be wrapped by weak link
     private TYPE value;
