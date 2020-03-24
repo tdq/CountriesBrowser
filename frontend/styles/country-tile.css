@@ -1,9 +1,13 @@
 .country-tile {
-    display: inline-block;
-    width: 400px;
+    justify-self: center;
+    display: block;
+    width: 100%;
     cursor: pointer;
     background-color: var(--panel-background-color);
     color: var(--text-color);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 .country-tile > .country-tile-flag {
@@ -16,4 +20,17 @@
 .country-tile > .country-tile-info-content {
     display: block;
     padding: 2rem;
+    color: var(--label-text-color);
+}
+
+.country-tile > .country-tile-info-content strong {
+    color: var(--text-color);
+}
+
+.country-tile > .country-tile-info-content > .country-tile-name {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--text-color);
 }

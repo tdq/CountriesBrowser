@@ -1,23 +1,28 @@
+.all-countries-view {
+    width: 1296px;
+    margin: auto;
+    margin-top: 3rem;
+}
+
 .all-countries-view vaadin-text-field {
     background-color: var(--panel-background-color);
     color: var(--text-color);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 .all-countries-view vaadin-combo-box {
-    background-color: var(--panel-background-color);
-    color: var(--text-color);
-}
-
-[part="text-field"] {
-    color: var(--text-color);
-}
-
-[part="toggle-button"] {
-    color: var(--text-color);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 .countries-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: var(--background-color);
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    /*background-color: var(--background-color);*/
+    margin-top: 3rem;
 }

@@ -1,11 +1,33 @@
 .top-bar {
     background-color: var(--panel-background-color);
     color: var(--text-color);
+    position: relative;
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    height: 44px;
+}
+
+.top-bar > .header-panel {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    width: 1296px;
+    margin: auto;
+}
+
+.top-bar > .header-panel > label {
+    line-height: 44px;
+}
+
+.top-bar > .header-panel > vaadin-button {
+    background: none;
+    color: var(--text-color);
 }
 
 .top-bar-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: inline-block;
     width: 210px;
     height: 32px;

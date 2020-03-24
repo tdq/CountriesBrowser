@@ -2,7 +2,6 @@ package org.nikolay.broadcom.views.mainlayout;
 
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.router.RoutePrefix;
 import com.vaadin.flow.router.RouterLayout;
 
 @CssImport("./styles/main-layout.css")

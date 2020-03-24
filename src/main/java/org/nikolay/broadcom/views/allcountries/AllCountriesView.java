@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.util.List;
 
 @CssImport("./styles/all-countries-view.css")
+@CssImport(value = "./styles/vaadin-text-field-styles.css", themeFor = "vaadin-text-field")
+@CssImport(value = "./styles/vaadin-combo-box-styles.css", themeFor = "vaadin-combo-box")
+@CssImport(value = "./styles/vaadin-combo-box-overlay-styles.css", themeFor = "vaadin-combo-box-overlay")
 @Route(value = "countries", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
 public class AllCountriesView extends Div {

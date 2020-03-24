@@ -4,7 +4,6 @@ import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.textfield.TextField;
-import com.vaadin.flow.shared.Registration;
 import org.nikolay.broadcom.services.CountriesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -31,6 +30,7 @@ class FilterBar extends Div {
     FilterBar(@Qualifier("countriesService")CountriesService countriesService) {
         // TODO refactor in the way to use filter beans
         // FilterBar should autowire all implementations of Filter interface, render filters and process their listeners
+        setClassName("filter-bar");
 
         searchField.setClearButtonVisible(true);
         searchField.setPlaceholder("Search for a country...");

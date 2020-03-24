@@ -21,6 +21,9 @@ class TopBar extends Div {
         Div logo = new Div();
         logo.addClassName("top-bar-logo");
 
+        Div panel = new Div();
+        panel.setClassName("header-panel");
+
         Label title = new Label("Where is the world?");
 
         Button modeSwitcher = new Button(currentMode.getModeName());
@@ -31,7 +34,8 @@ class TopBar extends Div {
             listener.onModeChange(currentMode);
         });
 
-        add(logo, title, modeSwitcher);
+        panel.add(title, modeSwitcher);
+        add(logo, panel);
     }
 
     interface ModeSwitchListener {
