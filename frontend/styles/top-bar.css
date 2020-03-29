@@ -27,9 +27,10 @@
 .top-bar-logo {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
-    width: 210px;
+    width: 32px;
     height: 32px;
-    background: url(https://static.broadcom.com/static/img/broadcom-logo.png) center center no-repeat;
+    background: url(https://static.broadcom.com/static/img/broadcom-logo.png) left center no-repeat;
 }
