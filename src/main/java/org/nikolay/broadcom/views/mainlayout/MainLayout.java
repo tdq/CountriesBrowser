@@ -1,5 +1,6 @@
 package org.nikolay.broadcom.views.mainlayout;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.RouterLayout;
@@ -16,6 +17,6 @@ public class MainLayout extends Div implements RouterLayout {
     }
 
     private void modeSwitch(Mode mode) {
-        getElement().setAttribute("mode", mode.name());
+        UI.getCurrent().getElement().setAttribute("mode", mode.name());
     }
 }

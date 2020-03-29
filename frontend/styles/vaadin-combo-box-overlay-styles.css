@@ -1,4 +1,4 @@
-:host, :host [part="content"] {
+:host [part="content"] {
     background-color: var(--panel-background-color);
     color: var(--text-color);
 }

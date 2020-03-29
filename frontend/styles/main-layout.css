@@ -1,17 +1,19 @@
-.main-layout {
+body {
     --background-color: #202D36;
     --panel-background-color: #2B3743;
     --text-color: #E8EFEF;
     --label-text-color: #BCC9D2;
     --shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
 
+.main-layout {
     background-color: var(--background-color);
     transition: all 0.5s ease 0s;
     height: 100%;
     overflow: auto;
 }
 
-.main-layout[mode=LIGHT] {
+body[mode=LIGHT] {
     --background-color: #FAFAFA;
     --panel-background-color: #FFFFFF;
     --text-color: #18181A;
